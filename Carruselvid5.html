@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Temporada 1</title>
+    <link rel="stylesheet" href="Cv5.css">
+    </head>
+</html>
+<body>
+    <div class="container">
+        <h1>Temporada 1<br><span>Capitulos del 1 al 4.</span></h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                  <div class="small-img">
+                        <img src="ma.jpg">
+                       <img src="play.png" class="play-btn" onclick="playVideo('ED C1.mp4')">
+                    </div>
+                    <p>01. Los Ed-tocables<br> Si lo desea descargar puedes tocar el siguiente enlace ⬇
+                    <a href="ED C1.mp4">Descargar</a></p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="me.jpg">
+                        <img src="play.png" class="play-btn" onclick="playVideo('ED C2.mp4')">
+                    </div>
+                    <p>02. Atadas A Ed, Doble D y Eddy<br> Si lo desea descargar puedes tocar el siguiente enlace ⬇
+                    <a href="ED C2.mp4">Descargar</a></p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="mi.jpg">
+                        <img src="play.png" class="play-btn" onclick="playVideo('ED C3.mp4')">
+                    </div>
+                    <p>03. Vamos A Refrescarnos<br> Si lo desea descargar puedes tocar el siguiente enlace ⬇
+                    <a href="ED C3.mp4">Descargar</a></p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="mo.jpg">
+                        <img src="play.png" class="play-btn" onclick="playVideo('ED C4.mp4')">
+                    </div>
+                    <p>04. Es Otro Ed<br> Si lo desea descargar puedes tocar el siguiente enlace ⬇
+                    <a href="ED C4.mp4">Descargar</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="90%" controls autoplay id="myVideo">
+          <source src="ED C1.mp4" type="video/mp4">
+        </video>
+        <img src="close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
+<script>
+    var videoPlayer = document.getElementById("videoPlayer");
+    var myVideo = document.getElementById("videoPlayer");
+
+    function stopVideo(){
+
+        videoPlayer.style.display = "none";
+
+    }
+    function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display ="block";
+    }
+</script>
+<footer class="footer">
+    <a href="ED.html">
+        <img src="flecha-izquierda 3.png" alt="logo" class="pt2">
+    </a>
+    <p><ol>Copyright© 2022-Todos los derechos reservados:_Diazshen_.<br>
+        Empresa(s) productora(s) XDlatino
+    <a href="https://xdlatino.blogspot.com/">@Pagina</a></ol>
+    </p>
+</footer>
+</body>

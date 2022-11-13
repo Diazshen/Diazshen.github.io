@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Temporada 2</title>
+    <link rel="stylesheet" href="Cv2.css">
+    </head>
+</html>
+<body>
+    <div class="container">
+        <h1>Temporada 2<br><span>Capitulos del 1 al 4.</span></h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="ka.jpg">
+                    <img src="play.png" class="play-btn" onclick="playVideo('videoplayback t1.mp4')">
+                    </div>
+                    <p> 01. Susto-oke<br> Si lo desea descargar puedes tocar el siguiente enlace ⬇
+                    <a href="videoplayback t1.mp4">Descargar</a></p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="ke.jpg">
+                        <img src="play.png" class="play-btn" onclick="playVideo('videoplayback t2.mp4')">
+                    </div>
+                    <p>02. Dentro Del Bunker<br> Si lo desea descargar puedes tocar el siguiente enlace ⬇
+                    <a href="videoplayback t2.mp4">Descargar</a></p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="ki.jpg">
+                        <img src="play.png" class="play-btn" onclick="playVideo('videoplayback t3.mp4')">
+                    </div>
+                    <p>03. La Guerra De Golf<br> Si lo desea descargar puedes tocar el siguiente enlace ⬇
+                    <a href="videoplayback t3.mp4">Descargar</a></p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="ko.jpg">
+                        <img src="play.png" class="play-btn" onclick="playVideo('videoplayback t4.mp4')">
+                    </div>
+                    <p>04. El Teatro De Los Calcetines<br> Si lo desea descargar puedes tocar el siguiente enlace ⬇
+                    <a href="videoplayback t4.mp4">Descargar</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+          <source src="videoplayback.mp4" type="video/mp4">
+        </video>
+        <img src="close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
+<script>
+    var videoPlayer = document.getElementById("videoPlayer");
+    var myVideo = document.getElementById("videoPlayer");
+
+    function stopVideo(){
+
+        videoPlayer.style.display = "none";
+
+    }
+    function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display ="block";
+    }
+</script>
+<footer class="footer">
+    <a href="Gravity.html">
+        <img src="flecha-izquierda (2).png" alt="logo" class="pt2">
+    </a>
+    <p><ol>Copyright© 2022-Todos los derechos reservados:_Diazshen_.<br><br>
+        Empresa(s) productora(s) XDlatino
+    <a href="https://xdlatino.blogspot.com/">@Pagina</a></ol>
+    </p
+</footer>
+
+
+</body>
